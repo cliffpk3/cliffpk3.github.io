@@ -9524,6 +9524,11 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+.text-white2 {
+  font-size: 8px; /* Adjust the size to your preference */
+}
+
+
 .text-primary {
   color: #0BCEAF !important;
 }
