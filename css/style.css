@@ -9525,7 +9525,7 @@ button.bg-dark:focus {
 }
 
 .text-white2 {
-  font-size: 12px; /* Adjust the size to your preference */
+  font-size: 12px !important; /* Adjust the size to your preference */
   color: #fff !important;
 }
 
