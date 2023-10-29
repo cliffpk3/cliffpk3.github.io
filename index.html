@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <style>
+
+.horizontal-container {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */	
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Vertically align items in the center */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.item {
+    margin: 10px; /* Add margin to separate items */
+    padding: 10px; /* Add padding for spacing within items */
+    border: 1px solid #999; /* Add a border for visual separation */
+}
+
 .image-container {
       border: 2px solid #0bceaf; /* Adjust the border width and color as needed */
       padding: 5px; /* Optional: Add some padding to the image container */
@@ -144,7 +159,7 @@ li {
                         <div class="col-sm-6 py-2"><h6>Location: <span class="text-secondary">Coronel Fabriciano, Minas Gerais, Brazil</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
 						<div class="right">
-							<a class="btn btn-dark btn-social mr-2" href="en_ricardo_carli_20231024.pdf"><i class="fa-regular fa-newspaper"></i></a>
+							<a class="btn btn-dark btn-social mr-2" href="documents/en_ricardo_carli_20231024.pdf"><i class="fa-regular fa-newspaper"></i></a>
 							<a class="btn btn-dark btn-social mr-2" href="https://www.linkedin.com/in/ricardo-carli-475461181/"><i class="fab fa-linkedin-in"></i></a>
 							<a class="btn btn-dark btn-social mr-2" href="https://www.instagram.com/carli.ericardo/"><i class="fab fa-instagram"></i></a>
 							<a class="btn btn-dark btn-social" href="https://web.whatsapp.com/send?phone=5531990909713"><i class="fab fa-whatsapp"></i></a>
@@ -412,17 +427,17 @@ li {
     <!-- Documents Start -->
 	<div class="container-fluid pt-5 pb-3" id="documents">
 		<div class="container">
-			<div class="position-absolute d-flex align-items-center justify-content-center">
+			<div class="position-relative d-flex align-items-center justify-content-center">
 				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Documents</h1>
 				<h1 class="position-absolute text-uppercase text-dark">My Certificates</h1>
 			</div>
-			<div class="row portfolio-container">
-				<div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+			<div class="horizontal-container">
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
 					<div class="position-relative overflow-hidden mb-2">
 						<div class="image-container"><img class="img-fluid rounded w-100" src="img/fm2s_greenbelt_pg1-1.png" alt=""></div>
-						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center href="" ">
 							<small>
-								<p class="box mb-1 text-white" href="https://github.com/cliffpk3/cliffpk3.github.io/blob/main/img/fm2s_greenbelt.pdf">The Green Belt Six Sigma equips professionals with intermediate-level skills to lead process improvement projects, using data-driven methods, and contributing to a culture of continuous improvement. The FM2S Certificate is internationally recognized by Council for Six Sigma.</p>
+								<p class="box mb-1 text-white">The Green Belt Six Sigma equips professionals with intermediate-level skills to lead process improvement projects, using data-driven methods, and contributing to a culture of continuous improvement. The FM2S Certificate is internationally recognized by Council for Six Sigma.</p>
 							</small>
 							<a href="img/da_01.png" data-lightbox="portfolio">
 								<div class="position-relative mb-4">
@@ -435,9 +450,9 @@ li {
 				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
 					<div class="position-relative overflow-hidden mb-2">
 						<div class="image-container"><img class="img-fluid rounded w-100" src="img/udemy_bi-1.png" alt=""></div>
-						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center href=""">
 							<small>
-								<p class="box mb-1 text-white" href="https://github.com/cliffpk3/cliffpk3.github.io/blob/main/img/udemy_bi.pdf">In-depth data modeling, advanced DAX functions, complex data visualization, and transformation of raw data into actionable insights for career advancement.</p>
+								<p class="box mb-1 text-white">In-depth data modeling, advanced DAX functions, complex data visualization, and transformation of raw data into actionable insights for career advancement.</p>
 							</small>
 							<a href="img/da_01.png" data-lightbox="portfolio">
 								<div class "position-relative mb-4">
@@ -450,9 +465,9 @@ li {
 				<div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
 					<div class="position-relative overflow-hidden mb-2">
 						<div class="image-container"><img class="img-fluid rounded w-100" src="img/udemy_machine_learning-1.png" alt=""></div>
-						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center href="" ">
 							<small>
-								<p class="box mb-1 text-white" href="https://github.com/cliffpk3/cliffpk3.github.io/blob/main/img/udemy_machine_learning.pdf">Advanced Python focusing on data science and machine learning. Covers advanced data manipulation, feature engineering, and model optimization.</p>
+								<p class="box mb-1 text-white" href="">Advanced Python focusing on data science and machine learning. Covers advanced data manipulation, feature engineering, and model optimization.</p>
 								<li class="text-white">Pandas, Numpy;</li>
 								<li class="text-white">Seaborn, Matplotlib;</li>
 								<li class="text-white">Scikit Learn, XGBoost and other ML libraries.</li>
@@ -461,6 +476,17 @@ li {
 					</div>
 					<h6 class="title font-weight-bold mb-1"><center>Udemy - Advanced Python for Data Science and Machine Learning</h6></center>
 				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+					<div class="position-relative overflow-hidden mb-2">
+						<div class="image-container"><img class="img-fluid rounded w-100" src="img/fm2s_whitebelt-1.png" alt=""></div>
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center  href=""">
+							<small>
+								<p class="box mb-1 text-white" href="" >The White Belt Six Sigma certification equips fundamental skills and knowledge to participate in process improvement initiatives.</p>
+							</small>
+						</div>
+					</div>
+					<h6 class="title font-weight-bold mb-1"><center>FM2S - Lean Six Sigma Whitebelt</h6></center>
+				</div>			
 			</div>
 		</div>
 	</div>
@@ -531,55 +557,6 @@ li {
 	</div>
     <!-- Portfolio End -->
 
-
-
-    <!-- Blog Start
-    <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-dark">Latest Blog</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
-
-
     <!-- Contact Start -->
     <div class="container-fluid py-5" id="contact">
         <div class="container">
@@ -614,13 +591,6 @@ li {
             </div>
         </div>
     </div>
-<!--
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
-     <button type="submit">Send</button>
-</form>
-    <!-- Contact End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
@@ -630,26 +600,13 @@ li {
                 <a class="btn btn-light btn-social mr-2" href="https://www.instagram.com/carli.ericardo/"><i class="fab fa-instagram"></i></a>
                 <a class="btn btn-light btn-social" href="https://web.whatsapp.com/send?phone=5531990909713"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <!--<div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a>
-            </div>-->
             <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">HTMLCodex Domain</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
             </p>
         </div>
     </div>
 
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
-    <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
