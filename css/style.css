@@ -10009,3 +10009,47 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+
+.horizontal-container {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */	
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Vertically align items in the center */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.item {
+    margin: 10px; /* Add margin to separate items */
+    padding: 10px; /* Add padding for spacing within items */
+    border: 1px solid #999; /* Add a border for visual separation */
+}
+
+.image-container {
+      border: 2px solid #0bceaf; /* Adjust the border width and color as needed */
+      padding: 5px; /* Optional: Add some padding to the image container */
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.mail {
+    margin-top: -45px;
+}
+.box {
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+li {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.title {
+  margin-top: 5px;
+  margin-bottom: 5px
+}
