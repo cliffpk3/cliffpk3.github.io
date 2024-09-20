@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<style>
+
+.horizontal-container {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */	
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Vertically align items in the center */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.item {
+    margin: 10px; /* Add margin to separate items */
+    padding: 10px; /* Add padding for spacing within items */
+    border: 1px solid #999; /* Add a border for visual separation */
+}
+
+.image-container {
+      border: 2px solid #0bceaf; /* Adjust the border width and color as needed */
+      padding: 5px; /* Optional: Add some padding to the image container */
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.mail {
+    margin-top: -45px;
+}
+.box {
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+li {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.title {
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+</style>
+
+<html lang="en">
+
+<head>
+<script src="https://kit.fontawesome.com/6eeed575f4.js" crossorigin="anonymous"></script>	
+    <meta charset="utf-8">
+    <title>Ricardo Carli's Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-dark">Ricardo</span> Carli</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Knowledge</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#documents" class="nav-item nav-link">Documents</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <!--<a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>-->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start ALTERAR A COR AQUI -->
+    <div class="container-fluid bg-dark d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.png" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-dark mb-2" style="-webkit-text-stroke: 2px #ffffff;">Ricardo Carli</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">BI Analyst, Data Engineer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">About</h1>
+                <h1 class="position-absolute text-uppercase text-dark">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/profile_picture2.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">BI Analyst, Data Engineer & Analyst &#128200</h3>
+                    <p>Currently pursuing Master's degree in Data Engineering. Advanced English. Over six years of experience working with data analysis, engineering, and business intelligence. Advanced knowledge in SQL and Python, relational databases (SQL Server, Oracle), creation and maintenance of ETL process (SSIS, SSMS, Python) and data visualization through MS Power BI, Excel, Tableau and Streamlit.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Ricardo Carli</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">26 July 1993</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Postgraduate</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">6+ years working with data</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+55 31 99090-9713</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">carli.ricardo@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Location: <span class="text-secondary">Coronel Fabriciano, Minas Gerais, Brazil</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+						<div class="right">
+							<a class="btn btn-primary btn-social mr-2" href="documents/en_ricardo_carli.pdf">CV</a>
+							<a class="btn btn-primary btn-social mr-2" href="https://www.linkedin.com/in/ricardo-carli-475461181/"><i class="fab fa-linkedin-in"></i></a>
+							<a class="btn btn-primary btn-social mr-2" href="https://www.instagram.com/carli.ericardo/"><i class="fab fa-instagram"></i></a>
+							<a class="btn btn-primary btn-social" href="https://web.whatsapp.com/send?phone=5531990909713"><i class="fab fa-whatsapp"></i></a>
+						</div>						
+                    </div>
+                    <!--div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="https://www.linkedin.com/ambry/?x-li-ambry-ep=AQJTi11_5GyVKQAAAYrXyaJS3QONuWNInwnl5xmhOvXbkIFeMTdFc2AtkI1ZkyGA1PUkK7EAtSfepNvVH8r2yjYrxrUNg49wvPArvCA1BVoEExChOhSMYoo4h_HIT85txOMSSQcBnGdDORSauO3A8SUos9mVHDIvbAsJupichUbY9Lef5_HJ0v01rYTK3nCe_Fgyx1TkeU_BUZyVa4_RYecO076Kd75Mh-eOnakQgq5ZZXbdBMgZhCUCSa5gkocvKSk2sB1lCcRubZ_zvmGjri5rMvz2IYMjd9O4CNXSi1D2-xi80SEk_0jj3XkqSpeB744K_mdWpIp228SJUk6p9KyCCI_dHq8SkiT5_q_0KoBzp7i9DWFdlgyzaBVL0j-NH4pTUSsnPqrEndHQoCikUuvJEkLfdRhFKVpW4kj3vyn-Wr1f9ZEC1_ChX5uXy3ELIWmbi-66G0UG0ZoB2kXhmzCbeWFHEtIK7uOiDxbNnt-105gAFfiW0GvjIWMoHqbVhm6HO1009yL-rIlcRDEedh2fJbGIoPQu9fJeuvIOiI9qWb0M5ntMDlJx1xkTpicwqeAkpw&x-ambry-um-filename=RicardoCarli.pdf" class="btn btn-sm btn-outline-dark m-1">Download CV</a>
+						<a href="https://www.linkedin.com/in/ricardo-carli-475461181/" class="btn btn-sm btn-outline-dark m-1">LinkedIn</a>
+						<a href="https://web.whatsapp.com/send?phone=5531990909713" class="btn btn-sm btn-outline-dark m-1">Whatsapp</a>
+					</div-->					
+                    <!--<a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container" >
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Knowledge</h1>
+                <h1 class="position-absolute text-uppercase text-dark">Main Education & Expericence</h1>
+            </div>
+            <div class="row align-items-top">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">&#128119 Professional Identity</h3>
+                    <div class="border-left border-dark pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4"> <!--div class="position-relative mb-4" vertical-align: top-->
+                            <i class="far fa-dot-circle text-dark position-absolute"  style="top: 2px; left: -32px;"></i>
+                            <p>Creative professional, self-taught, love working with data and lover of challenges (and I MEAN it). Over six years working with data. Good analytical skills and knowledge of technologies, often allowing me to contribute with effective solutions to business problems.</p>
+                        </div></div>
+                    <h3 class="mb-4">&#129496 Personal Identity</h3>
+                    <div class="border-left border-dark pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4"> <!--div class="position-relative mb-4" vertical-align: top-->
+                            <i class="far fa-dot-circle text-dark position-absolute"  style="top: 2px; left: -32px;"></i>
+                            <p>Lover of travelling, animals, sports and meditation. I consider myself determined but also empathetic, prioritizing kindness and cooperation in personal and professional relationships. I don't carry any prejudice and also believe that by doing my part I contribute to the whole.</p>
+                        </div></div>						
+                        <h3 class="mb-4">&#128218 My Education</h3>
+                        <div class="border-left border-dark pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-dark position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master degree student in Data Engineering</h5>
+                            <p class="mb-2"><strong>PUC Minas</strong> | <small>2023 - 2024</small></p>
+                            <p>2023/January until 2024/July.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-dark position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Graduated in Engineering</h5>
+                            <p class="mb-2"><strong>Universidade do Leste de Minas Gerais</strong> | <small>2013 - 2018</small></p>
+                            <p>2013/July until 2018/July</p>
+                        </div>						
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">&#128204 Main Professional Expericence</h3>
+                    <div class="border-left border-dark pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-dark position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">1+ year as Data Analyst</h5>
+                            <p class="mb-2"><strong>Capgemini</strong> | <small>June/2024 - Present</small></p>
+                            <p>International experience using English as the main language, creation of interactive dashboards and AI executive summaries using Power BI and Co-pilot, and automation of advanced/VBA worksheets in MS Excel. This role demonstrates proficiency in remote and multicultural work environments, as well as expertise in data visualization.</p>
+                        </div>					
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-dark position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">4+ years as Business Intelligence Analyst</h5>
+                            <p class="mb-2"><strong>Fundação São Francisco Xavier</strong> | <small>2020 - 2024</small></p>
+                            <p>Strong experience in creating and optimizing ETL processes using SSIS, as well as developing Data Warehouses and Data Marts. Full-cycle skills, from gathering requirements to delivering dashboards in Power BI. Experience with SQL for complex data extraction.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-dark position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">6+ ETL, Data Analysis and Visualization, Data Science Projects</h5>
+                            <p class="mb-2"><strong>Freelancer</strong> | <small>2018 - Present</small></p>
+                            <p>Build data solutions for business problems, close to real challenges of companies, using public data from competitions. While developing the projects, I approache the problem from the conception of the business environment.</p>
+                        </div>								
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-dark position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">1+ year as Data Analyst</h5>
+                            <p class="mb-2"><strong>Fundação São Francisco Xavier</strong> | <small>2019 - 2020</small></p>
+                            <p>Data governance and KPI analysis, creation of dashboards with Power BI and MS Excel, and the application of descriptive statistics for data analysis. Experience in data processing using Python, with widely recognized libraries.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-dark position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">1 year as Data Assistant</h5>
+                            <p class="mb-2"><strong>Fundação São Francisco Xavier</strong> | <small>2018 - 2019</small></p>
+                            <p>Financial data analysis and civil engineering sector data analysis, focusing on data extraction and processing using Python and creating informative dashboards. Strong skills in Excel and Power BI for data visualization.</p>
+                        </div>			
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-dark">My Skills</h1>
+            </div>
+			<p>
+			</p>
+            <div class="row align-items-top">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python for Data Analysis</h6>
+                            <h6 class="font-weight-bold">Advanced</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">AWS (S3, Glue, Lambda, RDS, EC2)</h6>
+                            <h6 class="font-weight-bold">Beginner</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">TSQL, PLSQL</h6>
+                            <h6 class="font-weight-bold">Advanced</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Linux/Ubuntu</h6>
+                            <h6 class="font-weight-bold">Beginner</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">NoSQL Database</h6>
+                            <h6 class="font-weight-bold">Beginner</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>					
+                </div>
+                <div class="col-md-6">
+                  <div class="skill mb-4">
+                      <div class="d-flex justify-content-between">
+                          <h6 class="font-weight-bold">SSIS</h6>
+                          <h6 class="font-weight-bold">Advanced</h6>
+                      </div>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                  </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MS Excel</h6>
+                            <h6 class="font-weight-bold">Advanced</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MS Power BI, Dax and Power M</h6>
+                            <h6 class="font-weight-bold">Advanced</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Git/Github</h6>
+                            <h6 class="font-weight-bold">Intermediary</h6>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Tableau</h6>
+                            <h6 class="font-weight-bold">Intermediary</h6>
+                        </div>
+                        <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>			
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+	<!--
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-dark">My Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-solid fa-diagram-project service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Business Intelligence</h4>
+                    </div>
+                    <p>Using dimensional data modeling seeking performance and precision, allowing more assertives decisions guided by data.</p>
+                    <!--<a class="border-bottom border-dark text-decoration-none" href="">Read More</a>-->
+	<!--
+                </div>	    
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa-2x fa-solid fa-magnifying-glass-chart service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Data Analysis</h4>
+                    </div>
+                    <p>Analysis and interpretation of data to extract meaningful insights.</p>
+                    <!--<a class="border-bottom border-dark text-decoration-none" href="">Read More</a>-->
+	<!--
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-solid fa-wrench service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Data Engineering</h4>
+                    </div>
+                    <p>Involves designing, building and mantaining data infrastructure for efficient data processing.</p>
+                    <!--<a class="border-bottom border-dark text-decoration-none" href="">Read More</a>-->
+    <!--            </div>				
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-solid fa-chart-line service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Descriptive Analytics</h4>
+                    </div>
+                    <p>Using Descriptive Statistics methods to organize, summarize and describe datasets aspects or to compare characteristics between two or more important datasets</p>
+                    <!--<a class="border-bottom border-dark text-decoration-none" href="">Read More</a>-->
+     <!--           </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Machine Learning</h4>
+                    </div>
+                    <p>Through the use of Machine-Learning algorithms, historical data and statistical modeling, its possible to make predictions about future outcomes or client classification</p>
+                    <!--<a class="border-bottom border-dark text-decoration-none" href="">Read More</a>-->
+      <!--          </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-solid fa-desktop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Data Visualization</h4>
+                    </div>
+                    <p>Using a dashboard, interactive or not, it is possible to have better insights into the data and its details, generate management reports and track changes in real time, anywhere, with any device</p>
+                    <!--<a class="border-bottom border-dark text-decoration-none" href="">Read More</a>-->
+    <!--            </div>
+            </div>
+        </div>
+    </div-->
+    <!-- Services End -->
+
+    <!-- Documents Start -->
+	<div class="container-fluid pt-5 pb-3" id="documents">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Docs</h1>
+				<h1 class="position-absolute text-uppercase text-dark">My Certificates</h1>
+			</div>
+			<div class="horizontal-container">
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+					<div class="position-relative overflow-hidden mb-2">
+						<div class="image-container"><img class="img-fluid rounded w-100" src="img/hackerrank_sql.png" alt=""></div>
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<small>
+								<p class="box mb-1 text-white">The Advanced HackerRank Certificate signifies a comprehensive mastery of advanced SQL coding techniques and problem-solving skills. It is conquered through solving complex coding challenges, implementing optimized algorithms, and effectively utilizing advanced data structures.
+								<center><a class="fa text-white" style="font-size: 14px;"href="documents/hackerrank_sql.pdf">&#x2193</a></center>
+								</p>
+							</small>
+						</div>
+					</div>
+					<h6 class="title font-weight-bold mb-1"><center>HackerRank - Advanced SQL Language</h6></center>
+				</div>			
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+					<div class="position-relative overflow-hidden mb-2">
+						<div class="image-container"><img class="img-fluid rounded w-100" src="img/udemy_bi-1.png" alt=""></div>
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center href=""">
+							<small>
+								<p class="box mb-1 text-white">In-depth data modeling, advanced DAX functions, complex data visualization, and transformation of raw data into actionable insights for career advancement.
+								<center><a class="fa text-white" style="font-size: 14px;"href="documents/udemy_bi.pdf">&#x2193</a></center>
+								</p>							
+							</small>
+						</div>
+					</div>
+					<h6 class="title font-weight-bold mb-1"><center>Udemy - Advanced Power BI</h6></center>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+					<div class="position-relative overflow-hidden mb-2">
+						<div class="image-container"><img class="img-fluid rounded w-100" src="img/udemy_machine_learning-1.png" alt=""></div>
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<small>
+								<p class="box mb-1 text-white" href="">Advanced Python focusing on data science and machine learning. Covers advanced data manipulation, feature engineering, and model optimization.</p>
+								<li class="text-white">Pandas, Numpy;</li>
+								<li class="text-white">Seaborn, Matplotlib;</li>
+								<li class="text-white">Scikit Learn, XGBoost and other ML libraries.</li>
+								<center><a class="fa text-white" style="font-size: 14px;"href="documents/udemy_machine_learning.pdf"> &#x2193</a></center>
+							</small>
+						</div>
+					</div>
+					<h6 class="title font-weight-bold mb-1"><center>Udemy - Advanced Python for Data Science and Machine Learning</h6></center>
+				</div>
+			</div>
+			<div class="horizontal-container">
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+					<div class="position-relative overflow-hidden mb-2">
+						<div class="image-container"><img class="img-fluid rounded w-100" src="img/fm2s_greenbelt_pg1-1.png" alt=""></div>
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<small>
+								<p class="box mb-1 text-white">The Green Belt Six Sigma equips professionals with intermediate-level skills to lead process improvement projects, using data-driven methods, and contributing to a culture of continuous improvement. The FM2S Certificate is internationally recognized by Council for Six Sigma.
+								<center><a class="fa text-white" style="font-size: 14px;"href="documents/fm2s_greenbelt.pdf">&#x2193</a></center>
+								</p>
+							</small>
+						</div>
+					</div>
+					<h6 class="title font-weight-bold mb-1"><center>FM2S - Lean Six Sigma Greenbelt</h6></center>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second"><!-- -->
+					<div class="position-relative overflow-hidden mb-2">
+						<div class="image-container"><img class="img-fluid rounded w-100" src="img/udemy_pyspark.jpg" alt=""></div>
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center href=""">
+							<small>
+								<p class="box mb-1 text-white">PySpark is crucial in ETL for its ability to handle large-scale data processing efficiently, leveraging distributed computing capabilities to transform and extract data swiftly from diverse sources with ease.
+								<center><a class="fa text-white" style="font-size: 14px;"href="documents/udemy_pyspark.pdf">&#x2193</a></center>
+								</p>							
+							</small>
+						</div>
+					</div>
+					<h6 class="title font-weight-bold mb-1"><center>Udemy - PySpark</h6></center>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+					<div class="position-relative overflow-hidden mb-2">
+						<div class="image-container"><img class="img-fluid rounded w-100" src="img/udemy_apache.png" alt=""></div>
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center href=""">
+							<small>
+								<p class="box mb-1 text-white">Apache Airflow is a powerful platform used to workflow orchestration and scheduling, empowering automate complex processes with ease.
+								<center><a class="fa text-white" style="font-size: 14px;"href="documents/udemy_apache.pdf">&#x2193</a></center>
+								</p>							
+							</small>
+						</div>
+					</div>
+					<h6 class="title font-weight-bold mb-1"><center>Udemy - Apache Airflow</h6></center>
+				</div>
+			</div>			
+		</div>	
+	</div>			
+	<!-- Documents End -->
+	
+	<!-- Portfolio Start -->
+	<div class="container-fluid pt-5 pb-3" id="portfolio">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Gallery</h1>
+				<h1 class="position-absolute text-uppercase text-dark">My Portfolio</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center mb-2">
+					<ul class="list-inline mb-4" id="portfolio-flters">
+						<li class="btn btn-sm btn-outline-dark m-1 active" data-filter="*">All</li>
+						<li class="btn btn-sm btn-outline-dark m-1" data-filter=".first">Descriptive Analytics</li>
+						<li class="btn btn-sm btn-outline-dark m-1" data-filter=".second">Machine Learning</li>
+						<li class="btn btn-sm btn-outline-dark m-1" data-filter=".third">Data Visualization</li>
+						<li class="btn btn-sm btn-outline-dark m-1" data-filter=".fourth">Business Intelligence</li>						
+					</ul>
+				</div>
+			</div>
+			<div class="row portfolio-container">
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first portfolio-item third">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/da_01.png" alt="">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<p class="box font-weight-bold mb-1 text-white">Tools used:
+								<li class="text-white">Python, Pandas and Seaborn;</li>
+								<li class="text-white">Anaconda, Pycharm and Jupyter Notebook;</li>
+								<li class="text-white">Interactive maps with Plotly and Folium;</li>
+								<li class="text-white">Heroku Cloud;</li>
+								<li class="text-white">Streamlit Python Framework Web;</li>
+							</p>
+							<center><a class="fa text-white" style="font-size: 24px;" href="https://github.com/cliffpk3/analytics-home-sales">&#x2193</a></center>
+							<a href="img/da_01.png" data-lightbox="portfolio">
+								<div class="position-relative mb-4">
+								</div>
+							</a>
+						</div>
+						<h6 class="title font-weight-bold mb-1"><center>Identification of Properties for Resale</h6></center>
+						<center><small><p class="mb-2">#python #pandas #seaborn #heroku #streamlit</small></center>
+						<small><p class="mb-2">Identification of properties with price below the average for acquisition. Analyze the needs a reform. Setting a new price for resale, aiming at good profitability. <br/>All data shown through a page with charts and map visualization in Streamlit</p></small>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/ml_01.png" alt="">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<p class="box font-weight-bold mb-1 text-white">Tools used:
+								<li class="text-white">Git, Gitlab, Github;</li>
+								<li class="text-white">Python, Pandas, Matplotlib and Seaborn;</li>
+								<li class="text-white">Jupyter Notebook;</li>
+								<li class="text-white">Heroku Cloud;</li>
+								<li class="text-white">SKLearn, Heroku, Flask, Telegram;</li>
+							</p>
+							<center><a class="fa text-white" style="font-size: 24px;" href="https://github.com/cliffpk3/ds_em_producao/tree/master">&#x2193</a></center>
+							<a href="img/da_01.png" data-lightbox="portfolio">
+								<div class="position-relative mb-4">
+								</div>
+							</a>
+						</div>
+						<h6 class="title font-weight-bold mb-1"><center>Sales Predictions</h6></center>
+						<center><small><p class="mb-2">#machinelearning #python #pandas #xgboost #telegram #bot</p></small></center>						
+						<justify><small><p class="mb-2">Creation of a regression supervised algorithm (XGBoost) for predicting selling values of each registered store.<br/> The results are disclosed through an API interacting with a BOT in Telegram</p></small></justify>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/dv_01.png" alt="">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<p class="box font-weight-bold mb-1 text-white">Tools used:
+								<li class="text-white">Tableau;</li>
+								<li class="text-white">Git, Github.</li>
+							</p>
+							<center><a class="fa text-white" style="font-size: 24px;" href="https://github.com/cliffpk3/sales_financial_products/">&#x2193</a></center>
+							<a href="img/da_01.png" data-lightbox="portfolio">
+								<div class="position-relative mb-4">
+								</div>
+							</a>
+						</div>
+						<h6 class="title font-weight-bold mb-1"><center>Financial Products Sale</h6></center>
+						<center><small><p class="mb-2">#tableau #datashboard #dataviz #visualization</p></small></center>
+						<small><p class="mb-2">This data visualization project provides a comprehensive overview of sales and profit by state and region in the financial products sector through the use of Tableau tool.</p></small>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first portfolio-item third">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/sb_01.png" alt="">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<p class="box font-weight-bold mb-1 text-white">Tools used:
+								<li class="text-white">Python, Pandas;</li>
+								<li class="text-white">Power BI;</li>
+							</p>
+							<center><a class="fa text-white" style="font-size: 24px;" href="https://github.com/cliffpk3/super-brinquedos">&#x2193</a></center>
+							<a href="img/da_01.png" data-lightbox="portfolio">
+								<div class="position-relative mb-4">
+								</div>
+							</a>
+						</div>
+						<h6 class="title font-weight-bold mb-1"><center>Sales Data, Analysis & Visualization</h6></center>
+						<center><small><p class="mb-2">#powerbi #dashboard #dataviz #visualization #analysis</p></small></center>						
+						<small><p class="mb-2">Super Brinquedos is a fictional toy store and as Children's Day is approaching, the Commercial Manager requested the creation of a dashboard to understand the store's performance.</p></small>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/aw_01.png" alt="">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<p class="box font-weight-bold mb-1 text-white">Tools used:
+								<li class="text-white">SSMS, SQL SERVER;</li>
+								<li class="text-white">SSIS;</li>
+							</p>
+							<center><a class="fa text-white" style="font-size: 24px;" href="https://github.com/cliffpk3/adventure-works">&#x2193</a></center>
+							<a href="img/da_01.png" data-lightbox="portfolio">
+								<div class="position-relative mb-4">
+								</div>
+							</a>
+						</div>
+						<h6 class="title font-weight-bold mb-1"><center>SSIS - ETL and Dimensional Modeling</h6></center>
+						<center><small><p class="mb-2">#ssms #sqlserver #ssis #visualstudio</p></small></center>						
+						<small><p class="mb-2">Adventure Works, a fictional leading provider of wholesale and retail products for hiking and adventure enthusiasts, is gearing up for an enhanced analytical approach. With a focus on creating a dimensional model, the company aims to analyze sales data efficiently through a consistant BI dimensional model.</p></small>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/pdm_01.png" alt="">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<p class="box font-weight-bold mb-1 text-white">Tools used:
+								<li class="text-white">MySQL, MySQL Shell;</li>
+								<li class="text-white">Pentaho;</li>
+							</p>
+							<center><a class="fa text-white" style="font-size: 24px;" href="https://github.com/cliffpk3/pentaho-adventure-works">&#x2193</a></center>
+							<a href="img/da_01.png" data-lightbox="portfolio">
+								<div class="position-relative mb-4">
+								</div>
+							</a>
+						</div>
+						<h6 class="title font-weight-bold mb-1"><center>Pentaho - ETL and Dimensional Modeling</h6></center>
+						<center><small><p class="mb-2">#pentaho #mysql #etl #bi</p></small></center>						
+						<small><p class="mb-2">A second approach on Adventure Works dimensional modeling project, now using Pentaho as main ETL tool.  </p></small>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first portfolio-item third">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/oil_01.png" alt="">
+						<div class="portfolio-btn bg-primary align-items-center justify-content-center">
+							<p class="box font-weight-bold mb-1 text-white">Tools used:
+								<li class="text-white">Python, Pandas; Matplotlib</li>
+								<li class="text-white">Power BI;</li>
+							</p>
+							<center><a class="fa text-white" style="font-size: 24px;" href="https://github.com/cliffpk3/oil_extract">&#x2193</a></center>
+							<a href="img/da_01.png" data-lightbox="portfolio">
+								<div class="position-relative mb-4">
+								</div>
+							</a>
+						</div>
+						<h6 class="title font-weight-bold mb-1"><center>Python, Power BI - Oil Extraction Data</h6></center>
+						<center><small><p class="mb-2">#powerbi #python #pandas #matplotlib #dashboard #dataviz #visualization #analysis</p></small></center>						
+						<small><p class="mb-2">Oil Extract is a fictional oil & gas extracting company. The Sector Manager sent an Excel worksheet containing information from the oil & gas area. He would like to understand the strategy for oil production considering the situations of "producing" and "injecting" wells, knowing that there is a relationship between them. Then he asked to develop a reporting dashboard using the Microsoft Power BI and Python tools that generates insights for managerial levels, based on location, time, and other features about oil and gas wells, basins, and fields on land and sea. </p></small>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+    <!-- Portfolio End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #3f3f3f;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-dark">Contact Me</h1>
+            </div>
+            <center><p class="mail"><small>(this actually works.)</small></center>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form action="https://formsubmit.co/carli.ricardo@gmail.com" method="POST">
+                                <div class="control-group">
+                                    <input type="email" class="form-control py-3 px-4" name="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                            <div class="control-group">
+                                <textarea type="text" class="form-control py-3 px-4" rows="5" name="name" placeholder="Your Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-dark" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">		    
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/ricardo-carli-475461181/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.instagram.com/carli.ericardo/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social" href="https://web.whatsapp.com/send?phone=5531990909713"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">HTMLCodex Domain</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
