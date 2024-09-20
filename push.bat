@@ -13,7 +13,7 @@ echo %SCRIPT_NAME%> .gitignore
 git add .
 
 :: Comita as alterações
-git commit -m "Atualização automática via script"
+git commit -m "Atualizacao automatica via script"
 
 :: Faz o push para o repositório remoto usando um token de autenticação
 git push --force main main
